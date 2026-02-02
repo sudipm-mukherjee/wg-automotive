@@ -31,10 +31,10 @@ if [ ! -f \$HOME/bin/repo ]; then\n\
 	chmod a+x \$HOME/bin/repo\n\
 fi\n\
 export AGL_TOP=\$HOME/AGL\n\
-if [ ! -d \$AGL_TOP/needlefish ]; then\n\
-	mkdir -p \$AGL_TOP/needlefish\n\
-	cd \$AGL_TOP/needlefish\n\
-	repo init -b ricefish -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\n\
+if [ ! -d \$AGL_TOP/trout ]; then\n\
+	mkdir -p \$AGL_TOP/trout\n\
+	cd \$AGL_TOP/trout\n\
+	repo init -b trout -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\n\
 	repo sync\n\
 	git clone https://github.com/elisa-tech/meta-elisa.git\n\
 fi" > /bin/setup_elisa.sh
